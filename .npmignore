@@ -1,0 +1,16 @@
+# Development files
+example.js
+Structure.md
+prompt.md
+task.md
+implementation_plan.md
+walkthrough.md
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

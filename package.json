@@ -1,13 +1,39 @@
 {
     "name": "url-validation-lib",
     "version": "1.0.0",
-    "description": "URL Validation Library",
+    "description": "A comprehensive utility library for validating, normalizing, and checking the status of URLs.",
     "main": "src/index.js",
     "type": "module",
+    "exports": {
+        ".": "./src/index.js"
+    },
+    "files": [
+        "src",
+        "README.md"
+    ],
     "scripts": {
         "test": "node example.js"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC"
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rratchapol/url-checker-lib.git"
+    },
+    "keywords": [
+        "url",
+        "validation",
+        "normalization",
+        "checker",
+        "social-media",
+        "facebook",
+        "instagram",
+        "linkedin",
+        "x",
+        "twitter"
+    ],
+    "author": "rratchapol",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rratchapol/url-checker-lib/issues"
+    },
+    "homepage": "https://github.com/rratchapol/url-checker-lib#readme"
 }
