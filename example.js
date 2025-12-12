@@ -1,7 +1,6 @@
 import {
     isValidWebsiteURL,
     isValidHTTPSURL,
-    isValidSocialMediaURL,
     isValidFacebookURL,
     isValidInstagramURL,
     isValidLinkedInURL,
@@ -9,7 +8,8 @@ import {
     isValidURL,
     normalizeURL,
     extractDomain,
-    isCheckUrl
+    isCheckUrl,
+    checkUrlStatus
 } from './src/index.js';
 
 console.log('--- URL Validation & Normalization Tests ---');
@@ -38,4 +38,17 @@ console.log("normalizeURL('example.com'):", normalizeURL('example.com')); // htt
 console.log("extractDomain('https://www.example.com/path'):", extractDomain('https://www.example.com/path')); // www.example.com
 console.log("isCheckUrl('example.com'):", isCheckUrl('example.com')); // https://example.com
 
-console.log('\n--- End Tests ---');
+console.log('\n6. Network Status Check:');
+console.log("Checking https://www.google.com...");
+checkUrlStatus('https://www.google.com').then(result => console.log('Google:', result));
+
+console.log("Checking https://this-domain-should-not-exist-12345.com...");
+checkUrlStatus('https://this-domain-should-not-exist-12345.com').then(result => console.log('Invalid Domain:', result));
+
+console.log("Checking https://www.google.com/nonexistentpage...");
+checkUrlStatus('https://www.google.com/nonexistentpage').then(result => console.log('404 Page:', result));
+
+// Wait for async checks
+setTimeout(() => {
+    console.log('\n--- End Tests ---');
+}, 3000);
