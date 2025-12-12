@@ -1,0 +1,13 @@
+{
+    "name": "url-validation-lib",
+    "version": "1.0.0",
+    "description": "URL Validation Library",
+    "main": "src/index.js",
+    "type": "module",
+    "scripts": {
+        "test": "node example.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
