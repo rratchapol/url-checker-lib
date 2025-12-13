@@ -12,7 +12,9 @@ This library provides robust tools for handling website URLs and social media pr
 
 ## Installation
 
-Since this is a local library, you can include it in your project by cloning the repository or copying the files.
+```bash
+npm i url-validation-lib
+```
 
 ```bash
 git clone https://github.com/rratchapol/url-checker-lib.git
