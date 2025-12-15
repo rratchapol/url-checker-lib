@@ -31,7 +31,7 @@
         "twitter"
     ],
     "author": "rratchapol",
-    "license": "ISC",
+    //"license": "ISC",
     "bugs": {
         "url": "https://github.com/rratchapol/url-checker-lib/issues"
     },
